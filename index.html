@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>prettier · Crystal bracelets, styled（内部原型 v4.1）</title>
+  <meta name="robots" content="noindex">
+<script>
+(function () {
+  if (Date.now() >= Date.parse("2026-11-01T04:35:00Z")) {
+    document.documentElement.innerHTML = '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Review link closed</title></head><body style="margin:0;font-family:Georgia,serif;background:#f6f1ea;color:#1f1a17"><main style="max-width:36rem;padding:4.5rem 1.5rem;line-height:1.6"><p>This review link closed at 12:35 on 1 Nov 2026, China time.</p><p>此评审链接已于 2026年11月01日 12:35（北京时间）关闭。</p></main></body>';
+  }
+})();
+</script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v2.css">
+  <link rel="stylesheet" href="v3.css">
+  <link rel="stylesheet" href="v4.css">
+</head>
+<body data-page="home">
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media" id="hero-media"></div>
+      <div class="hero-copy">
+        <div class="note"><b>1 首屏 · v1</b>回答“卖什么、和别家有什么不同”。同框穿搭大片、手腕标注与手腕近景卡，文案为 v1 原文。</div>
+        <p class="eyebrow">Crystal bracelets, styled</p>
+        <h1 class="display">Love it.<br><em>Know how to wear it.</em></h1>
+        <p class="lede">Every prettier bracelet comes with real outfits it works with, plus a close look at the wrist. So the one you love fits the way you already dress.</p>
+        <div class="actions">
+          <a class="btn primary" href="#shop">Shop bracelets</a>
+          <a class="btn ghost" href="#looks">See the looks</a>
+        </div>
+        <div id="hero-inlook"></div>
+      </div>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="note"><b>2 我们做什么 · v1</b>一句话＋三步：卖什么、怎么帮、对顾客的价值。</div>
+        <div class="how-grid">
+          <div>
+            <p class="eyebrow">What prettier does</p>
+            <h2 class="display-md" id="how-title">We sell crystal bracelets, and show you what to wear them with.</h2>
+          </div>
+          <ol class="steps">
+            <li><span class="num">01</span><h3>Find one you love</h3><p>Colour, light, shape. Start with whatever catches your eye.</p></li>
+            <li><span class="num">02</span><h3>See it with real outfits</h3><p>Every bracelet is shown in full looks, with a close-up of the wrist.</p></li>
+            <li><span class="num">03</span><h3>Wear it with what you own</h3><p>Each look tells you what to reach for in your own wardrobe.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section looks" id="looks" aria-labelledby="looks-title">
+      <header class="section-head wrap">
+        <div class="note"><b>3 穿搭画廊 · v1</b>借 Cider“一张通栏＋两张竖图”，三套穿搭、三条不同手串，先建立“这里的东西好看”。顶部导航 Edits 指向这里。</div>
+        <p class="eyebrow">The edit · Soft light</p>
+        <h2 class="display-md" id="looks-title">Real outfits, one bracelet each.</h2>
+        <p class="sub">Tap any look to see the bracelet and how to wear it.</p>
+      </header>
+      <div class="look-wide" id="look-wide"></div>
+      <div class="look-pair" id="look-pair"></div>
+    </section>
+
+    <section class="section ways" id="ways" aria-labelledby="ways-title">
+      <div class="wrap">
+        <div class="note"><b>4 同一条手串、三套穿法 · v1，扩为四款</b>每款固定三套，标题的“Three”对四款都成立。粉雾桃序、雾蓝清叙为同框合成图；苍碧朱玑一套合成图加两套服装参考图，奶雾奶茶三套服装参考图，风格与理由取自 Style 研究。</div>
+        <header class="section-head">
+          <p class="eyebrow">One bracelet, many ways</p>
+          <h2 class="display-md" id="ways-title">Same bracelet. Three outfits.</h2>
+        </header>
+        <div class="ways-tabs" id="ways-tabs" role="tablist" aria-label="Choose a bracelet"></div>
+        <div class="ways-product" id="ways-product"></div>
+        <div class="ways-grid" id="ways-grid" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <section class="section side-a" id="by-feeling" aria-labelledby="a-title">
+      <div class="wrap">
+        <div class="note"><b>5 从手串出发 · 按感受 · v2 结构</b>手串在前：左侧是代表手串的供方佩戴图与“它本身为什么是这种感受”，右侧是同一感受下的三套衣服，理由从手串讲到衣服。Calm 与 Vibrant 改由 Mood V2 的第一优先手串（雾蓝清叙、秋禄）领衔；其余三种沿用 Mood V1。</div>
+        <header class="section-head side-head">
+          <p class="side-label"><i>A</i>Start with a bracelet</p>
+          <h2 class="display-md" id="a-title">Pick a feeling.<br>We'll show you what to wear.</h2>
+          <p class="mood-note">Moods describe how a bracelet looks and wears, not what a stone does.</p>
+        </header>
+        <div class="mood-tabs" id="mood-tabs" role="tablist" aria-label="Choose a mood"></div>
+        <div class="mood-panel" id="mood-panel" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <section class="section side-b" id="clothes" aria-labelledby="b-title">
+      <div class="wrap">
+        <div class="note"><b>6 从衣服出发 · v2 两个小节</b>衣服在前：先按想要的风格挑，再按手里的衣物挑。按风格提供两种排法对比：默认“一排三张”避免与第 3 块画廊重复同一节奏；可切回 v2 原排法比较。</div>
+        <header class="section-head side-head">
+          <p class="side-label"><i>B</i>Start with your clothes</p>
+          <h2 class="display-md" id="b-title">Pick a look, or what you're wearing.<br>We'll find the bracelet.</h2>
+        </header>
+
+        <div class="sub-block" id="by-style">
+          <div class="sub-head">
+            <div>
+              <span class="sub-eyebrow">By style</span>
+              <h3 class="display-sm">The look you want</h3>
+            </div>
+            <div class="proto-switch" id="style-switch" role="group" aria-label="风格展示排法对比">
+              <span>排法对比</span>
+              <button type="button" data-layout="row">一排三张</button>
+              <button type="button" data-layout="v2">v2 原排法</button>
+            </div>
+          </div>
+          <div id="style-area"></div>
+          <div class="more-styles" id="more-styles"></div>
+        </div>
+
+        <div class="sub-block" id="by-garment">
+          <div class="sub-head">
+            <div>
+              <span class="sub-eyebrow">By what you're wearing</span>
+              <h3 class="display-sm">Or start from one piece you own</h3>
+            </div>
+          </div>
+          <div class="garment-grid" id="garment-grid"></div>
+          <div class="more-styles" id="more-garments"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closer" id="closer" aria-labelledby="closer-title">
+      <div class="wrap">
+        <div class="note"><b>7 近看手串 · v3</b>在供方产品图上标出 3 颗关键珠子，说明颜色与光感并落到“为什么好搭”。珠径比例图按供方规格画出，只是示意；透光近景与选款理由用虚线框标明待补。</div>
+        <header class="section-head row">
+          <div>
+            <p class="eyebrow">Look closer</p>
+            <h2 class="display-md" id="closer-title">The bracelet itself.</h2>
+            <p class="sub">Colour, light and shape: the details that make the outfits work.</p>
+          </div>
+          <div class="closer-tabs" id="closer-tabs" role="tablist" aria-label="Choose a bracelet to look at"></div>
+        </header>
+        <div class="closer-panel" id="closer-panel" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop" aria-labelledby="shop-title">
+      <div class="wrap">
+        <div class="note"><b>8 全部手串 · 新设计</b>像首饰陈列：统一奶油衬底，圆形取景把每张供方图裁到手串居中、大小一致，鼠标移上换成上手图。按颜色筛选；每款下方 “Worn with” 用小圆图链接到它已有的穿搭。颜色归类和裁切位置由供方图目测，属候选。</div>
+        <header class="shop-head">
+          <div>
+            <p class="eyebrow">Shop all</p>
+            <h2 class="display-md" id="shop-title">All bracelets</h2>
+          </div>
+          <div class="shop-filter" id="shop-filter" role="group" aria-label="Filter by colour"></div>
+        </header>
+        <div class="shop-grid" id="shop-grid"></div>
+        <div class="shop-more"><button class="btn ghost" type="button" id="shop-more"></button></div>
+      </div>
+    </section>
+
+    <section class="about compact" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="note"><b>品牌与购买帮助</b>保留在页面最后，后续再完善。尺寸、保养、配送退换只放位置。</div>
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow" id="about-title">About prettier</p>
+            <p class="statement">We choose bracelets for their colour, light and shape. Then we do the part most shops skip: showing you what to wear them with.</p>
+          </div>
+          <div class="about-body">
+            <p>Our bracelets are selected from crystal bead makers. Material names follow the maker's description until we've checked them ourselves, and when a design is our own change, we'll say so.</p>
+          </div>
+        </div>
+        <div class="help-row" id="help">
+          <div><h3>Sizing guide</h3><p>How to measure your wrist. Details coming before launch.</p></div>
+          <div><h3>Materials &amp; care</h3><p>What each stone is and how to look after it. Details coming before launch.</p></div>
+          <div><h3>Shipping &amp; returns</h3><p>Where we ship and how returns work. Details coming before launch.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

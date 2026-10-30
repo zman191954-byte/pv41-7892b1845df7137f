@@ -1,0 +1,16 @@
+name: close-review-link
+on:
+  schedule:
+    - cron: "35 4 1 11 *"
+    - cron: "20 5 1 11 *"
+  workflow_dispatch:
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove the public site and keep the repository private
+        env:
+          GH_TOKEN: ${{ secrets.TAKEDOWN_TOKEN }}
+        run: |
+          gh api --method DELETE "repos/${{ github.repository }}/pages" || true
+          gh repo edit "${{ github.repository }}" --visibility private --accept-visibility-change-consequences || true
